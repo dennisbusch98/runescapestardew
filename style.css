@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    overflow: hidden; /* Skjuler scrollbars hvis spillet fyller skjermen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Sikrer at body fyller hele viewport høyden */
+    background-color: #333; /* En mørk bakgrunn bak spillet */
+}
+
+canvas {
+    border: 2px solid #555; /* En liten ramme rundt spillet */
+    border-radius: 4%;
+    background-color: #000; /* Standard bakgrunn for canvas før spillet tegnes */
+    image-rendering: pixelated; /* Viktig for skarp pixel art */
+    image-rendering: -moz-crisp-edges; /* Firefox */
+    image-rendering: crisp-edges; /* Standard for andre nettlesere */
+
+}
